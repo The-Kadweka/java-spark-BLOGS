@@ -1,14 +1,14 @@
 {{#partial "content"}}
-    <h1>POSTS POSTED!</h1>
+    <h1>Post list!</h1>
 
     {{#if posts}} <!--if posts exist, then -->
     {{#each posts}} <!--loop-->
     <p>Current post:</p>
-    <p> {{ content }}
-    <a href="/posts/{{id}}">READ-MORE!</a></p>  <!--show-->
+    <p> {{ content }}  <a href="/posts/{{id}}">Read More ...</a> </p>  <!--show-->
     {{/each}}
     {{else}} <!--no posts!-->
-    <p>NO POSTS!</p>
+    <p>No posts!</p>
     {{/if}}
+
 {{/partial}}
 {{> layout.hbs}}
